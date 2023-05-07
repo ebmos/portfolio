@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: basic-sans, sans-serif;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* NAVIGATION BAR & BUTTONS */
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24),rgba(0,0,0,10)), url(/images/background.jpg);
+  box-shadow: 0 0 30px black;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: basic-sans, sans-serif;
+}
+
+nav {
+  background-color: #000000aa;
+  padding: 0;
+  margin: 0;
+  height: 68px;
+}
+
+/* LOGO */
+#navbar img {
+  width: 100px;
+  float: left;
+  margin-top: 17px;
+  margin-left: 15px;
+  margin-right: 0px;
+}
+
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  width: 120px;
+  display: block;
+  padding: 25px 0px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+#navbar a:hover {
+  background: #41414158;
+  border-radius: 7px;
+  color: #5896a6;
+}
+
+/* SOCIAL MEDIA IN THE NAV BAR */
+
+#navbar .socialmedia img {
+  width: 30px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* TITLE */
+
+.title h1 {
+  margin-top: 30vh;
+  font-size: 100px;  
+  text-align: center;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  filter: drop-shadow(10px 5px 2px #000000bb);
+}
+.title .signature {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Indie Flower', cursive;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 540px) {
+  #navbar img {
+    width: 60px;
+    margin-top: 25px;
+    margin-right: 0px;
+  }
+  #navbar .socialmedia img {
+    width: 20px;
+    margin-top: 23px;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+  .title .signature {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navbar a {
+    height: 67px;
+    width: 110px;
+    font-size: 11px;
+    position: unset;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 30px;
+  }
+}
+
+
+/* OM MEG SIDEN */
+
+.om-meg {
+  padding: 50px 12%;
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+  filter: drop-shadow(0px 0px 6px #000000bb);
+}
+
+.row1 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.picMe {
+  flex-basis: 50%;
+}
+.picMe img {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  filter: drop-shadow(0px 0px 6px #000000bb);
+  transition: all .2s ease-in-out;
+}
+.picMe img:hover {
+  transform: scale(1.1); 
+}
+.om-meg h2 {
+  color: rgb(88, 150, 166);
+  font-size: 40px;
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+.aboutmetext {
+  flex-basis: 50%;
+  font-size: 25px;
+  color: rgb(26, 26, 26);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+
+/* GÅ TIL PROSJEKTER SIDEN */
+
+
+.prosjekter {
+  padding: 50px 12%;
+  height: 100vh;
+  background-color: rgb(32, 32, 32);
+  filter: drop-shadow(0px 0px 6px #000000bb);
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.prosjekter h2 {
+  color: rgb(88, 150, 166);
+  font-size: 40px;
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.395));
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+.text-col {
+  flex-basis: 50%;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family: 'Montserrat', sans-serif;
+}
+.text-col .prosjbtn {
+  width: 30%;
+  height: 60px;
+  background-color: rgb(88, 150, 166);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.395));
+  margin-top: 50px;
+  transition: all .2s ease-in-out; 
+}
+.prosjbtn:hover {
+  transform: scale(1.1); 
+}
+
+.img-col {
+  flex-basis: 50%;
+}
+.img-col img {
+  width: 100%;
+  margin: auto;
+  border-radius: 20px; 
+  filter: drop-shadow(0px 0px 6px #000000bb);
+  transition: all .2s ease-in-out; 
+}
+.img-col img:hover {
+  transform: scale(1.1); 
+}
+
+/* SCROLL TIL TOPP KNAPP */
+
+a#scroll-btn2 {
+  position: absolute;
+  height: 3.7em;
+  width: 2.7em;
+  border: 0.2em solid #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 4.25em;
+  border-radius: 3em;
+  transition: all .2s ease-in-out; 
+}
+a#scroll-btn2:hover {
+  transform: scale(1.1); 
+}
+a#scroll-btn2:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.5em;
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: move-down 1s infinite;
+}
+@keyframes move-down {
+  10% {
+    opacity: 0.5s;
+  }
+  100% {
+    transform: translateY(-1em);
+    opacity: 0;
+  }
+}
+a#scroll-btn2:after {
+  position: absolute;
+  content: "Til toppen";
+  width: 6em;
+  display: block;
+  width: 6;
+  text-align: center;
+  left: -1.9em;
+  bottom: -2.5em;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
